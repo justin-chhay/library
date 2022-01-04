@@ -2,6 +2,11 @@
     Justin Chhay
 */
 
+//Variables
+let myLibrary = [duneBook, blueBoxBook];
+let duneBook = new Book("Dune", "Frank Herbert", 412, false);
+let blueBoxBook = new Book("Blue Box", "MIURA Kouji", 35, false);
+
 function Book(title, author, numOfPages, finishedReading) {
     this.title = "";
     this.author = "";
@@ -20,6 +25,11 @@ function Book(title, author, numOfPages, finishedReading) {
         return info;
     }
 }
+
+function addBookToLibrary(book) {
+    myLibrary.push(book);
+}
+
 
 const dune = new Book("DUNe", "authorlol", 24, false);
 dune.info();
